@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ejs intro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css" type="text/css">
+    </head>
+    <body>
+        <%- include("../partials/header") %> 
+        <h1><%= firstName + ' ' + lastName %> </h1>
+
+        <img src="/assets/nsx.png" alt="car">
+
+
+        <p><%= color %>, <%= car %>  </p>
+
+        <div>
+            <% places.forEach(({city,state},idx) =>{%>
+                <li><%= idx+1 %>. <%= city %>,<%= state %>   </li>
+
+            <%})%> 
+        </div>
+    </body>
+</html>

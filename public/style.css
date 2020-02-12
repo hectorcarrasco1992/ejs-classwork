@@ -1,0 +1,16 @@
+body{
+    background: lightblue;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    color: white;
+    background: black;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
